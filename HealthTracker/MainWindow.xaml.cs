@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using HealthTracker.Pages;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,5 +21,12 @@ namespace HealthTracker
         {
             InitializeComponent();
         }
+
+        private void MainFrame_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new MainPage();
+        }
+
+
     }
 }

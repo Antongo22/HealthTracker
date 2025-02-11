@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="HealthTracker.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HealthTracker.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainPage"
+    d:DesignHeight="720"
+    d:DesignWidth="1080"
+    mc:Ignorable="d">
+
+    <Grid>
+        <TextBox
+            x:Name="TextBoxMain"
+            Margin="10,10,10,91"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="TextBoxReminderTime"
+            Width="136"
+            Height="28"
+            Margin="142,0,0,11"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="TextBoxRepeatTime"
+            Width="136"
+            Height="28"
+            Margin="428,0,0,10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+
+        <Label
+            Margin="10,683,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Время напоминаний:" />
+        <Label
+            Margin="327,684,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Время повтора:" />
+
+        <Button
+            Width="200"
+            Height="40"
+            Margin="0,0,10,10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Click="SaveAndRestart_Click"
+            Content="Сохранить и перезапустить" />
+
+    </Grid>
+</Page>
